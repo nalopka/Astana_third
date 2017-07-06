@@ -1,0 +1,35 @@
+.store {
+	position: relative;
+	display: flex;
+	align-items: flex-end;
+	flex-direction: column;
+	transition: 1s;
+	background-color: rgba(black, 0.5);
+	.store-main {
+		padding-top: 20%;		
+		h2 {
+		margin-bottom: 5%;
+		font-size: 6.25rem;
+		color: $white;
+		font-family: Raleway-Bold;
+		}
+		.store-item {
+			width: 600px;
+			margin-right: 100px;
+			margin-bottom: 100px;
+			text-align: left;
+			h3 {
+				opacity: 1;
+				font-family: Raleway-Bold;
+				font-size: 3rem;
+				color: $white;
+			}
+			p {
+				font-family: Lato-Semibold;
+				line-height: 36px;
+				font-size: 1.75rem;
+				color: $store-text;
+			}
+		}
+	}
+}
