@@ -1,12 +1,12 @@
 .home {
-	position: relative;
 	display: flex;
 	align-items: flex-end;
 	height: 100vh;
-	background-color: $bgcolor;
-	background: $bgcolor url("../img/home/home.jpg") 0 0 no-repeat; /* для width < 800 прописать @media, уменьшить шрифт */
+	width: 100%;
+	// background-color: $bgcolor;
+	background: 0 0 no-repeat; /* для width < 800 прописать @media, уменьшить шрифт */
 	background-size: 100%;
-	background-position: center;
+	// background-position: center;
 	color: $white;
 	.location-point {   /* ДОБАВИТЬ ЛОГО */
 		position: absolute;

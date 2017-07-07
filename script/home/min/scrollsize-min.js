@@ -1,0 +1,1 @@
+$(document).ready(function(){$(window).on("scroll",function(){var o=$(window).scrollTop(),n=1+parseInt(o/120,0);$(".cover").css("transform","scale("+n+")"),inView(".home").on("exit",function(){$(".cover").css("transform","scale(1)")})})});

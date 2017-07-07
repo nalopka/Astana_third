@@ -1,7 +1,10 @@
 @charset "UTF-8";
 div, p, body, button, h1, h2, h3, h4, img, hr, li, ul, span, section {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  -webkit-transition: background 0.5s linear;
+  -o-transition: background 0.5s linear;
+  transition: background 0.5s linear; }
 
 p, h1, h2, h3, span {
   cursor: default; }
@@ -24,15 +27,17 @@ html {
   height: 100vh;
   position: fixed;
   z-index: -1;
-  background: #222222 url("../img/store/bg_store_1.jpg") 0 0 no-repeat;
-  background-size: cover;
+  background: #222222 0 0 no-repeat;
+  background-size: 100%;
   will-change: transform;
-  -webkit-transition: background 0.5s linear;
-  -o-transition: background 0.5s linear;
-  transition: background 0.5s linear; }
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1); }
+  .cover .test1 {
+    background-size: 100%;
+    height: 100%; }
 
 .home {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -42,11 +47,10 @@ html {
   -ms-flex-align: end;
   align-items: flex-end;
   height: 100vh;
-  background-color: #222222;
-  background: #222222 url("../img/home/home.jpg") 0 0 no-repeat;
+  width: 100%;
+  background: 0 0 no-repeat;
   /* для width < 800 прописать @media, уменьшить шрифт */
   background-size: 100%;
-  background-position: center;
   color: #ffffff; }
   .home .location-point {
     /* ДОБАВИТЬ ЛОГО */
@@ -69,8 +73,8 @@ html {
 
 .territory {
   height: 100vh;
-  background: #222222 url("../img/territory/scheme.png") 0 30% no-repeat;
-  background-size: cover;
+  background: 0 0 no-repeat;
+  background-size: 100%;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -156,6 +160,7 @@ html {
   transition: 1s;
   background-color: rgba(0, 0, 0, 0.5); }
   .logistic .logistic-main {
+    max-width: 800px;
     padding-top: 20%;
     margin-left: 5%; }
     .logistic .logistic-main h2 {
